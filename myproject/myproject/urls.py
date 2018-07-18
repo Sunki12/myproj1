@@ -22,4 +22,6 @@ urlpatterns = [
     path('FM/', include('FM.urls')),
     path('loginAPI/',include('loginAPI.urls')),
     path('userInfoAPI/',include('userInfoAPI.urls')),
+    path('imgAPI/',include('imgAPI.urls')),
+    path('media/',include('imgAPI.urls'))
 ]

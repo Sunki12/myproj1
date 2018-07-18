@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'FM.apps.Myapp1Config',
     'rest_framework',
     'loginAPI.apps.LoginapiConfig',
-    'userInfoAPI.apps.UserinfoapiConfig'
+    'userInfoAPI.apps.UserinfoapiConfig',
+    'imgAPI.apps.ImgapiConfig'
 
 ]
 
@@ -127,3 +128,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media').replace('\\', '/') # media即为图片上传的根路径
+MEDIA_URL = '/media/'
